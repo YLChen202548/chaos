@@ -11,8 +11,8 @@ tic;
 P1 = imread('C1.png');
 P2 = imread('C2.png');
 EK_D = imread('EK_D.png'); % 扩散秘钥
-P3 = imread('Cameramanc.png'); % 待解密图片
-% P3 = imread('Lenac.png'); P3 = imread('Horsec.png'); % 待解密图片
+ P3 = imread('butterflyc.png'); % 待解密图片
+% P3 = imread('Horsec.png'); % 待解密图片
 % P3 = imread('Reliefc.png'); % 待解密图片
 % P3 = imread('Cameramanc.png'); % 待解密图片
 figure(1);
@@ -39,7 +39,7 @@ D2 = reshape(P2s, [256, 256]);  % 将一维数据重构为256x256
 P3r = reshape(P3r, [256, 256])';  % 将一维数据重构为256x256
 imwrite(D1,'D1.png');
 imwrite(D2,'D2.png');
-imwrite(P3r,'Cameramanr.png');
+imwrite(P3r,'butterflyr.png');
 toc;
 % imwrite('Horser.png'); % 保存解密图片
 % imwrite('Reliefr.png'); % 保存解密图片

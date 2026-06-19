@@ -13,8 +13,8 @@ z2 = mod(floor(z2 * 10^15), 256); % 对混沌序列z2处理
 %  P = repmat((0:255)', 1, 256);
 %  P = uint8(P');
 tic;
-P = imread('Cameraman.png');
-% P = imread('Lena.png');P = imread('Horse.png'); % 待加密图片
+P = imread('butterfly.png');
+% P = imread('Horse.png'); % 待加密图片
 % P = imread('Relief.png'); % 待加密图片
 % P = imread('Cameraman.png'); % 加解密图片
 
@@ -42,9 +42,8 @@ end
 % 重构加密后的图像
 C = reshape(Pd, [256, 256]);  % 将一维数据重构为256x256
 C = uint8(C);
-imwrite(C,'Cameramanc.png');
+imwrite(C,'butterflyc.png');
 toc;
-% imwrite(C,'Lenac.png'); % 保存加密图片
 % imwrite(C,'Horsec.png'); % 保存加密图片
 % imwrite(C,'Reliefc.png'); % 保存加密图片
 % imwrite(C,'Cameramanc.png'); % 保存加密图片

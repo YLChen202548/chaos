@@ -1,7 +1,7 @@
 clc, clear all
 close all;
 % 原始图像的直方图分析
-A = imread('Lena.png');
+A = imread('butterfly.png');
 B = imread('Horse.png');
 C = imread('Relief.png');
 D = imread('Cameraman.png');
